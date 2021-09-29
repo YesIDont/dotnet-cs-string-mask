@@ -1,18 +1,20 @@
 ### Project was created with the following commands:
--> solution dir:
-create solution
+-> .\
+create solution\
 ```dotnet sln -n "StringMask"```
-create console project
+
+create console project\
 ```dotnet new console -n ""```
-add project to solution
+
+add project to solution\
 ```dotnet sln StringMask.sln add ./StringMask/StringMask.csproj```
 
--> project dir: ./StringMask
-to add Nuget package
+-> ./StringMask\
+to add Nuget package\
 ```dotnet add package BenchmarkDotNet```
 
 ### To run the project and see benchmark output use:
--> project dir: ./StringMask
+-> ./StringMask\
 ```dotnet run -c Release```
 
 The output should resamble this table:
@@ -24,7 +26,12 @@ The output should resamble this table:
 |      withStringCreate | Password123! |              3 |  29.02 ns | 0.199 ns | 0.176 ns | 0.0433 |     136 B |
 
 ### VS Code
-For auto formating of .cs files add the following to VS Code settings.json:
+Install following plugins for VS Code:
+- C# from Microsoft
+
+For auto formating of .cs files add the following to VS Code settings.json:\
+```JSON
 "[csharp]": {
   "editor.defaultFormatter": "ms-dotnettools.csharp"
 }
+```
