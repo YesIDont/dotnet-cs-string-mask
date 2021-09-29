@@ -4,7 +4,7 @@ create solution\
 ```dotnet sln -n "StringMask"```
 
 create console project\
-```dotnet new console -n ""```
+```dotnet new console -n "StringMask"```
 
 add project to solution\
 ```dotnet sln StringMask.sln add ./StringMask/StringMask.csproj```
